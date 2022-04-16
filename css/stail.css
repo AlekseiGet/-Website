@@ -1,0 +1,644 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/segoeui.eot");
+  src: local("☺"), url("../fonts/segoeui.woff") format("woff"), url("../fonts/segoeui.ttf") format("truetype"), url("../fonts/segoeui.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.leo {
+  position: relative;
+}
+.leo .head {
+  width: 100%;
+  height: 768px;
+  background: url(../imj/CompositeLayer@background.png) 0 0/cover no-repeat;
+  position: relative;
+}
+.leo .head__title {
+  font-family: Mplus 1p;
+  font-size: 83px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 56px 0 0 17%;
+  color: #fff;
+  display: inline-block;
+}
+.leo .head__menu {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: 20px 0 0 18%;
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 35px;
+}
+.leo .head__menu a {
+  color: aliceblue;
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: 300;
+  margin: 0 0 0 90px;
+}
+.leo .head__menu a:hover {
+  border-bottom: 3px solid aliceblue;
+}
+.leo .head__button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  margin: 198px 0 0 0;
+  white-space: nowrap;
+}
+.leo .head__button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.leo .head__button button:hover {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.leo .head__button .head__button_left {
+  background: url(../imj/CompositeLayer@button_left.png) 0 0/50px no-repeat;
+  margin: 0 0 0 10%;
+}
+.leo .head__button .head__button_raight {
+  background: url(../imj/CompositeLayer@button_raght.png) 0 0/50px no-repeat;
+  margin: 0 0 0 70%;
+}
+.leo .head__imeig {
+  position: absolute;
+  bottom: 240px;
+  left: 19%;
+  z-index: 1;
+  width: 329px;
+  height: 329px;
+  background: url(../imj/CompositeLayer@coffe.png) 0 0/auto auto no-repeat;
+  border-radius: 52px;
+}
+.leo .head__sudtitle {
+  width: 337px;
+  height: 178px;
+  position: absolute;
+  top: 254px;
+  left: 47%;
+  z-index: 2;
+  color: aliceblue;
+}
+.leo .head__text {
+  display: block;
+  font-family: Segoe UI;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .head__text:first-line {
+  font-family: Segoe UI;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 86px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .head__demo {
+  display: block;
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  background: #2C7652;
+  line-height: 35px;
+  text-indent: 20px;
+  color: aliceblue;
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: 300;
+  margin: 30px 0 0 0;
+}
+.leo .head__demo:hover {
+  background: #2b4f3e;
+  font-size: 21px;
+  width: 137px;
+  height: 37px;
+  color: #bac3cc;
+  line-height: 39px;
+}
+.leo .body {
+  position: relative;
+  width: 100%;
+  height: 1735px;
+  position: absolute;
+  top: 488px;
+  left: 0px;
+  background: #fff;
+}
+.leo .body__menu .body__head .body__icon_responsive {
+  position: absolute;
+  top: 93px;
+  left: 14%;
+  background: url(../imj/CompositeLayer@responsive.png) 17px 3px/136px 155px no-repeat;
+}
+.leo .body__menu .body__head .body__title_responsive {
+  position: absolute;
+  top: 253px;
+  left: 14%;
+}
+.leo .body__menu .body__head .body__icon_comerce {
+  position: absolute;
+  top: 93px;
+  left: 35%;
+  background: url(../imj/CompositeLayer@comersy.png) 17px 3px/136px 155px no-repeat;
+}
+.leo .body__menu .body__head .body__title_comerce {
+  position: absolute;
+  top: 253px;
+  left: 35%;
+}
+.leo .body__menu .body__head .body__icon_daily {
+  position: absolute;
+  top: 93px;
+  left: 55%;
+  background: url(../imj/CompositeLayer@Daily_blog.png) 17px 3px/136px 155px no-repeat;
+}
+.leo .body__menu .body__head .body__title_daily {
+  position: absolute;
+  top: 253px;
+  left: 55%;
+}
+.leo .body__menu .body__head .body__icon_search {
+  position: absolute;
+  top: 93px;
+  left: 75%;
+  background: url(../imj/CompositeLayer@Search.png) 17px 3px/136px 155px no-repeat;
+}
+.leo .body__menu .body__head .body__title_search {
+  position: absolute;
+  top: 253px;
+  left: 75%;
+}
+.leo .body__menu .body__head div {
+  font-family: Segoe UI;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0px;
+  width: 175px;
+  height: 47px;
+  text-align: center;
+}
+.leo .body__menu .body__head button {
+  width: 176px;
+  height: 250px;
+}
+.leo .body__menu .body__head button:hover {
+  background-size: 133px 152px;
+}
+.leo .body__menu .body__box {
+  position: absolute;
+  top: 250px;
+  left: 25%;
+  z-index: 0;
+  width: 897px;
+  height: 658px;
+}
+.leo .body__menu .body__imeig {
+  width: 667px;
+  height: 307px;
+  position: absolute;
+  top: 40px;
+  left: 115px;
+}
+.leo .body__menu .body__responsive {
+  position: absolute;
+  top: 93px;
+  left: 25%;
+  z-index: 1;
+}
+.leo .body__menu .body__responsive .body__box {
+  background: #6598E6;
+}
+.leo .body__menu .body__responsive .body__box .body__imeig {
+  background: url(../imj/ipad@1X.png) 0 0/667px, 312px no-repeat;
+}
+.leo .body__menu .body__responsive .body__box .body__subtitle {
+  margin: 374px 0 0;
+  font-family: Segoe UI;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 51px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.leo .body__menu .body__responsive .body__box .body__text {
+  font-family: "Puppies Play";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 52px 10px 0;
+}
+.leo .body__menu .body__comerce {
+  position: absolute;
+  top: 93px;
+  left: 25%;
+  z-index: 0;
+}
+.leo .body__menu .body__comerce .body__box {
+  background: #6598E6;
+}
+.leo .body__menu .body__comerce .body__box .body__imeig {
+  background: url(../imj/poppi.jpg) 0 0/667px, 312px no-repeat;
+}
+.leo .body__menu .body__daily {
+  position: absolute;
+  top: 93px;
+  left: 25%;
+  z-index: 0;
+}
+.leo .body__menu .body__daily .body__box {
+  background: #6598E6;
+}
+.leo .body__menu .body__daily .body__box .body__imeig {
+  background: url(../imj/poiskovic.png) 0 0/667px, 312px no-repeat;
+}
+.leo .body__menu .body__search {
+  position: absolute;
+  top: 93px;
+  left: 25%;
+  z-index: 0;
+}
+.leo .body__menu .body__search .body__box {
+  background: #6598E6;
+}
+.leo .body__menu .body__search .body__box .body__imeig {
+  background: url(../imj/search-engines.png) 0 0/667px, 312px no-repeat;
+}
+.leo .body__scrinshot_left {
+  width: 37%;
+  height: 338px;
+  max-width: 486px;
+  background: url(../imj/CompositeLayer@scrinshot.png) 0 0/100% 100% no-repeat;
+  position: absolute;
+  top: 1116px;
+  left: 10%;
+  box-shadow: 3px 3px 3px 3px #e0d9ce;
+}
+.leo .body__scrinshot_raight {
+  width: 44%;
+  height: auto;
+  max-width: 574px;
+  position: absolute;
+  bottom: 280px;
+  left: 51%;
+  box-shadow: 3px 3px 3px 3px #e0d9ce;
+}
+.leo .body__slogan {
+  font-family: Segoe UI;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .body__list {
+  font-family: Utsaah;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo li {
+  padding: 0 0 0 25px;
+  background: url(../imj/Shape%2015@1X.png) 0 8px/auto no-repeat;
+}
+.leo .body__holder {
+  width: 100%;
+  height: 133px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.leo .body__box_left {
+  border-radius: 5px;
+  width: 34%;
+  height: 133px;
+  max-width: 470px;
+  position: absolute;
+  background: #E67624;
+  bottom: 40px;
+  left: 10%;
+}
+.leo .body__box_left .body__title {
+  font-family: Segoe UI;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: aliceblue;
+  padding: 25px 0 0 5%;
+}
+.leo .body__input_name {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  width: 30%;
+  height: 30px;
+  text-indent: 15px;
+}
+.leo .body__input_name:focus {
+  box-shadow: inset 0 0 10px #000;
+}
+.leo .body__input_password {
+  position: absolute;
+  bottom: 20px;
+  left: 38%;
+  width: 30%;
+  height: 30px;
+  text-indent: 15px;
+}
+.leo .body__input_password:focus {
+  box-shadow: inset 0 0 10px #000;
+}
+.leo .body__log {
+  position: absolute;
+  bottom: 20px;
+  left: 72%;
+  width: 80px;
+  height: 30px;
+  background: #444444;
+  color: aliceblue;
+}
+.leo .body__log:hover {
+  width: 77px;
+  height: 27px;
+}
+.leo .body__box_raight {
+  border-radius: 5px;
+  background: #01D4F3;
+  width: 34%;
+  height: 133px;
+  max-width: 470px;
+  position: absolute;
+  bottom: 40px;
+  left: 51%;
+}
+.leo .body__box_raight .body__title {
+  font-family: Segoe UI;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: aliceblue;
+  padding: 25px 0 0 5%;
+}
+.leo .body__emeil {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  width: 50%;
+  height: 30px;
+  text-indent: 15px;
+}
+.leo .body__emeil:focus {
+  box-shadow: inset 0 0 10px #000;
+}
+.leo .body__button_submit {
+  position: absolute;
+  bottom: 20px;
+  left: 72%;
+  width: 80px;
+  height: 30px;
+  background: #029BB1;
+  color: aliceblue;
+}
+.leo .body__button_submit:hover {
+  width: 77px;
+  height: 27px;
+}
+.leo .footer {
+  width: 100%;
+  height: 243px;
+  position: absolute;
+  top: 2223px;
+  left: 0;
+  background: #29252A;
+  color: aliceblue;
+}
+.leo .footer a {
+  color: aliceblue;
+  position: absolute;
+  top: 170px;
+  left: 75%;
+}
+.leo .footer a:hover {
+  font-size: 16px;
+  color: coral;
+}
+.leo .footer__about {
+  width: 103px;
+  height: 155px;
+  display: inline-block;
+  margin: 0px 0 0 10%;
+}
+.leo .footer__about .footer__header {
+  font-family: Segoe UI;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .footer__about .footer__body_text {
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .footer__about_too {
+  display: inline-block;
+  margin: 40px 0 0 10%;
+  width: 103px;
+  height: 155px;
+}
+.leo .footer__about_too .footer__header {
+  font-family: Segoe UI;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .footer__about_too .footer__body_text {
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .footer__testimoanials {
+  display: inline-block;
+  width: 455px;
+  height: 155px;
+  position: absolute;
+  top: 40px;
+  left: 45%;
+}
+.leo .footer__testimoanials .footer__header {
+  font-family: Segoe UI;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo button {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+}
+.leo .footer__button_left {
+  position: absolute;
+  top: 15px;
+  left: 190px;
+  background: url(../imj/Layer%20left.png) 0 0/100% no-repeat;
+}
+.leo .footer__button_left:hover {
+  width: 20px;
+  height: 20px;
+}
+.leo .footer__button_raight {
+  position: absolute;
+  top: 15px;
+  left: 230px;
+  background: url(../imj/Layer%20@raigh.png) 0 0/100% no-repeat;
+}
+.leo .footer__button_raight:hover {
+  width: 20px;
+  height: 20px;
+}
+.leo .footer__text {
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .footer__text_fat {
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.leo .footer__logotype_leo {
+  width: 222px;
+  height: 75px;
+  background: url(../imj/Leo_-%20copy@1X.png) 0 0/100% no-repeat;
+  position: absolute;
+  top: 66px;
+  left: 75%;
+}
